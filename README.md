@@ -1,2 +1,2 @@
 # T4-personal-portfolio-website
-Task 4 from my internship program.
+Task 4 from my internship program as a web developer.
