@@ -1,12 +1,12 @@
 body {
-    font-family: sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
 }
 
 header {
-    background-color: #333;
+    background-color: #0d004b;
     color: white;
     padding: 1rem 0;
 }
@@ -14,44 +14,57 @@ header {
 nav ul {
     list-style: none;
     text-align: center;
+    padding: 0;
 }
 
 nav ul li {
-    display: inline;
+    display: inline-block;
     margin: 0 1rem;
 }
 
 nav a {
     color: white;
     text-decoration: none;
+    font-size: 1.8vw;
+}
+
+section {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 700px;
 }
 
 .hero {
-    background-color: #f0f0f0;
     text-align: center;
-    padding: 4rem 0;
+    background-color: #f0f0f0;
 }
 
-.hero .content {
-    max-width: 800px;
-    margin: 0 auto;
+.hero-content {
+    padding: 2rem;
+}
+
+.hero-content p{
+    font-size: 1.2rem;
 }
 
 .profile-img {
-    width: 150px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
+    object-fit: cover;
     margin-bottom: 1rem;
 }
-
-.section {
-    padding: 4rem 0;
+.about p{
+    font-size: 1.2rem;
+    text-align: justify;
 }
 
-.section .content {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 1rem;
+.about ul {
+    list-style: disc;
+    margin-left: 2rem;
 }
+
 
 .projects .project-grid {
     display: grid;
@@ -59,23 +72,10 @@ nav a {
     gap: 2rem;
 }
 
-.project {
+.projects .project {
     border: 1px solid #ddd;
-    padding: 1rem;
-    text-align: center;
-}
-
-.project img {
-    max-width: 100%;
-    height: auto;
-}
-
-.button {
-    background-color: #007bff;
-    color: white;
-    padding: 0.5rem 1rem;
-    text-decoration: none;
-    border-radius: 5px;
+    padding: 1.5rem;
+    border-radius: 8px;
 }
 
 .contact form {
@@ -85,16 +85,39 @@ nav a {
     margin: 0 auto;
 }
 
-contact input,
-contact textarea {
-    padding: 0.5rem;
+.contact input,
+.contact textarea,
+.contact button {
     margin-bottom: 1rem;
+    padding: 0.75rem;
     border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.contact button {
+    background-color: #333;
+    color: white;
+    cursor: pointer;
 }
 
 footer {
-    background-color: #333;
+    background-color: #000000;
     color: white;
     text-align: center;
     padding: 1rem 0;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav ul li {
+        display: block;
+        margin: 0.5rem 0;
+    }
+    .projects .project-grid {
+        grid-template-columns: 1fr; /* Single column on smaller screens */
+    }
 }
