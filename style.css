@@ -11,19 +11,21 @@ header {
     padding: 1rem 0;
 }
 
-h1, h2, h3{
+h1,
+h2,
+h3 {
     text-align: center;
 }
 
-h2{
+h2 {
     font-size: 3rem;
 }
 
-h3{
+h3 {
     font-size: 2.5rem;
 }
 
-h4{
+h4 {
     font-size: 1.5rem;
 }
 
@@ -56,26 +58,28 @@ section {
     background-color: #f0f0f0;
 }
 
-.hero .bigger{
+.hero .bigger {
     font-size: 2.2rem;
 }
 
-.hero .big{
+.hero .big {
     font-size: 1.5rem;
 }
+
 .hero-content {
     padding: 2rem;
 }
-.hero-content p{
+
+.hero-content p {
     font-size: 1.3rem;
     text-align: center;
 }
 
-.about{
+.about {
     margin: 0 5rem;
 }
 
-.about .description{
+.about .description {
     font-size: 1.2rem;
     text-align: justify;
 }
@@ -88,28 +92,29 @@ section {
     object-fit: cover;
     margin-bottom: 1rem;
 }
-.about p{
+
+.about p {
     font-size: 1.2rem;
     text-align: justify;
 }
 
 .about ul {
     list-style: none;
-    
+
 }
 
-.about ul li{
+.about ul li {
     text-align: center;
 }
 
-.about .skillcontainer{
+.about .skillcontainer {
     border: black solid 1.5px;
     width: 500px;
     margin: 0 auto;
     border-radius: 8px;
 }
 
-.projects{
+.projects {
     margin: 0;
 }
 
@@ -129,17 +134,18 @@ section {
     margin: 0 auto;
 }
 
-#projects{
+#projects {
     height: 750px;
 }
 
-.contact{
+.contact {
     margin-top: 4rem;
 }
 
-.contact .reach{
+.contact .reach {
     text-align: center;
 }
+
 .contact form {
     display: flex;
     flex-direction: column;
@@ -155,7 +161,7 @@ section {
     border-radius: 4px;
 }
 
-.contact textarea{
+.contact textarea {
     height: 125px;
     margin-bottom: 3rem;
 
@@ -180,11 +186,13 @@ footer {
         flex-direction: column;
         text-align: center;
     }
+
     nav ul li {
         display: block;
         margin: 0.5rem 0;
     }
+
     .projects .project-grid {
-        grid-template-columns: 1fr; 
+        grid-template-columns: 1fr;
     }
 }
