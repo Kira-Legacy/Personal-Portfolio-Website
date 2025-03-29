@@ -11,6 +11,22 @@ header {
     padding: 1rem 0;
 }
 
+h1, h2, h3{
+    text-align: center;
+}
+
+h2{
+    font-size: 3rem;
+}
+
+h3{
+    font-size: 2.5rem;
+}
+
+h4{
+    font-size: 1.5rem;
+}
+
 nav ul {
     list-style: none;
     text-align: center;
@@ -29,10 +45,10 @@ nav a {
 }
 
 section {
-    padding: 4rem 2rem;
+    padding: 2rem 2rem;
     max-width: 1200px;
     margin: 0 auto;
-    height: 700px;
+    height: 600px;
 }
 
 .hero {
@@ -40,13 +56,30 @@ section {
     background-color: #f0f0f0;
 }
 
+.hero .bigger{
+    font-size: 2.2rem;
+}
+
+.hero .big{
+    font-size: 1.5rem;
+}
 .hero-content {
     padding: 2rem;
 }
-
 .hero-content p{
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    text-align: center;
 }
+
+.about{
+    margin: 0 5rem;
+}
+
+.about .description{
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
 
 .profile-img {
     width: 300px;
@@ -61,23 +94,52 @@ section {
 }
 
 .about ul {
-    list-style: disc;
-    margin-left: 2rem;
+    list-style: none;
+    
 }
 
+.about ul li{
+    text-align: center;
+}
+
+.about .skillcontainer{
+    border: black solid 1.5px;
+    width: 500px;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+.projects{
+    margin: 0;
+}
 
 .projects .project-grid {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .projects .project {
     border: 1px solid #ddd;
     padding: 1.5rem;
     border-radius: 8px;
+    text-align: center;
+    width: 450px;
+    margin: 0 auto;
 }
 
+#projects{
+    height: 750px;
+}
+
+.contact{
+    margin-top: 4rem;
+}
+
+.contact .reach{
+    text-align: center;
+}
 .contact form {
     display: flex;
     flex-direction: column;
@@ -86,12 +148,17 @@ section {
 }
 
 .contact input,
-.contact textarea,
 .contact button {
     margin-bottom: 1rem;
     padding: 0.75rem;
     border: 1px solid #ddd;
     border-radius: 4px;
+}
+
+.contact textarea{
+    height: 125px;
+    margin-bottom: 3rem;
+
 }
 
 .contact button {
@@ -118,6 +185,6 @@ footer {
         margin: 0.5rem 0;
     }
     .projects .project-grid {
-        grid-template-columns: 1fr; /* Single column on smaller screens */
+        grid-template-columns: 1fr; 
     }
 }
