@@ -11,9 +11,7 @@ header {
     padding: 1rem 0;
 }
 
-h1,
-h2,
-h3 {
+h1, h2, h3 {
     text-align: center;
 }
 
@@ -196,6 +194,5 @@ footer {
 
     .projects .project-grid {
         grid-template-columns: 1fr;
-        /* Single column on smaller screens */
     }
 }
